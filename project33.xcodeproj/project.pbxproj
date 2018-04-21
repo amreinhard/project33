@@ -12,6 +12,7 @@
 		BF30DE7B20880E31003F1B33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF30DE7920880E31003F1B33 /* Main.storyboard */; };
 		BF30DE7D20880E33003F1B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF30DE7C20880E33003F1B33 /* Assets.xcassets */; };
 		BF30DE8020880E33003F1B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF30DE7E20880E33003F1B33 /* LaunchScreen.storyboard */; };
+		BF30DE8820882418003F1B33 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		BF30DE7C20880E33003F1B33 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF30DE7F20880E33003F1B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF30DE8120880E33003F1B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				BF30DE7520880E31003F1B33 /* AppDelegate.swift */,
+				BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */,
 				BF30DE7720880E31003F1B33 /* ViewController.swift */,
 				BF30DE7920880E31003F1B33 /* Main.storyboard */,
 				BF30DE7C20880E33003F1B33 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			files = (
 				BF30DE7820880E31003F1B33 /* ViewController.swift in Sources */,
 				BF30DE7620880E31003F1B33 /* AppDelegate.swift in Sources */,
+				BF30DE8820882418003F1B33 /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
