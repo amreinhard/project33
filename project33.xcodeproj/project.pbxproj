@@ -13,6 +13,10 @@
 		BF30DE7D20880E33003F1B33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF30DE7C20880E33003F1B33 /* Assets.xcassets */; };
 		BF30DE8020880E33003F1B33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF30DE7E20880E33003F1B33 /* LaunchScreen.storyboard */; };
 		BF30DE8820882418003F1B33 /* RecordWhistleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */; };
+		BF30DE8A208ACCD4003F1B33 /* SelectGenreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE89208ACCD4003F1B33 /* SelectGenreViewController.swift */; };
+		BF30DE8C208D6FED003F1B33 /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8B208D6FED003F1B33 /* AddCommentsViewController.swift */; };
+		BF30DE8E208D72A5003F1B33 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */; };
+		BF30DE92208D816D003F1B33 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF30DE91208D816D003F1B33 /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		BF30DE7F20880E33003F1B33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF30DE8120880E33003F1B33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordWhistleViewController.swift; sourceTree = "<group>"; };
+		BF30DE89208ACCD4003F1B33 /* SelectGenreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectGenreViewController.swift; sourceTree = "<group>"; };
+		BF30DE8B208D6FED003F1B33 /* AddCommentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCommentsViewController.swift; sourceTree = "<group>"; };
+		BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
+		BF30DE8F208D805A003F1B33 /* project33.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = project33.entitlements; sourceTree = "<group>"; };
+		BF30DE91208D816D003F1B33 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF30DE92208D816D003F1B33 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +52,7 @@
 			children = (
 				BF30DE7420880E31003F1B33 /* project33 */,
 				BF30DE7320880E31003F1B33 /* Products */,
+				BF30DE90208D816D003F1B33 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,8 +67,12 @@
 		BF30DE7420880E31003F1B33 /* project33 */ = {
 			isa = PBXGroup;
 			children = (
+				BF30DE8F208D805A003F1B33 /* project33.entitlements */,
 				BF30DE7520880E31003F1B33 /* AppDelegate.swift */,
 				BF30DE8720882418003F1B33 /* RecordWhistleViewController.swift */,
+				BF30DE8B208D6FED003F1B33 /* AddCommentsViewController.swift */,
+				BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */,
+				BF30DE89208ACCD4003F1B33 /* SelectGenreViewController.swift */,
 				BF30DE7720880E31003F1B33 /* ViewController.swift */,
 				BF30DE7920880E31003F1B33 /* Main.storyboard */,
 				BF30DE7C20880E33003F1B33 /* Assets.xcassets */,
@@ -65,6 +80,14 @@
 				BF30DE8120880E33003F1B33 /* Info.plist */,
 			);
 			path = project33;
+			sourceTree = "<group>";
+		};
+		BF30DE90208D816D003F1B33 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF30DE91208D816D003F1B33 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +122,14 @@
 				TargetAttributes = {
 					BF30DE7120880E31003F1B33 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -139,7 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF30DE7820880E31003F1B33 /* ViewController.swift in Sources */,
+				BF30DE8C208D6FED003F1B33 /* AddCommentsViewController.swift in Sources */,
 				BF30DE7620880E31003F1B33 /* AppDelegate.swift in Sources */,
+				BF30DE8A208ACCD4003F1B33 /* SelectGenreViewController.swift in Sources */,
+				BF30DE8E208D72A5003F1B33 /* SubmitViewController.swift in Sources */,
 				BF30DE8820882418003F1B33 /* RecordWhistleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,6 +318,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = project33/project33.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ADP3UVM5F;
 				INFOPLIST_FILE = project33/Info.plist;
@@ -302,6 +337,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = project33/project33.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8ADP3UVM5F;
 				INFOPLIST_FILE = project33/Info.plist;

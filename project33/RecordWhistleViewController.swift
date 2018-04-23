@@ -14,6 +14,7 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     var stackView: UIStackView!
     var recordButton: UIButton!
     var playButton: UIButton!
+    var whistlePlayer: AVAudioPlayer!
     
     var recordingSession: AVAudioSession!
     var whistleRecorder: AVAudioRecorder!
@@ -101,6 +102,12 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
         
         if success {
             recordButton.setTitle("Tap to re-record", for: .normal)
+            if playButton.isHidden {
+                UIView.animate(withDuration: 0.35) { [unowned self] in
+                    self.playButton.isHidden = false
+                    self.playButton.alpha = 1
+                }
+            }
             navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Next", style: .plain, target: self, action: #selector(nextTapped))
         } else {
             recordButton.setTitle("Tap to record", for: .normal)
@@ -118,12 +125,32 @@ class RecordWhistleViewController: UIViewController, AVAudioRecorderDelegate {
     }
     
     @objc func nextTapped() {
+        let vc = SelectGenreViewController()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func playTapped() {
+        let audioURL = RecordWhistleViewController.getWhistleURL()
         
+        do {
+            whistlePlayer = try AVAudioPlayer(contentsOf: audioURL)
+            whistlePlayer.play()
+        } catch {
+            let ac = UIAlertController(title: "Playback failed", message: "There was a problem playing your whistle, please try re-recording.", preferredStyle: .alert)
+            ac.addAction(UIAlertAction(title: "Ok", style: .default))
+            present(ac, animated: true)
+        }
     }
     
     @objc func recordTapped() {
         if whistleRecorder == nil {
             startRecording()
+            if !playButton.isHidden {
+                UIView.animate(withDuration: 0.35) { [unowned self] in
+                    self.playButton.isHidden = true
+                    self.playButton.alpha = 0
+                }
+            }
         } else {
             finishRecording(success: true)
         }
