@@ -17,6 +17,9 @@
 		BF30DE8C208D6FED003F1B33 /* AddCommentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8B208D6FED003F1B33 /* AddCommentsViewController.swift */; };
 		BF30DE8E208D72A5003F1B33 /* SubmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */; };
 		BF30DE92208D816D003F1B33 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF30DE91208D816D003F1B33 /* CloudKit.framework */; };
+		BF30DE94208D96F3003F1B33 /* Whistle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE93208D96F3003F1B33 /* Whistle.swift */; };
+		BF30DE96208ED9ED003F1B33 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE95208ED9ED003F1B33 /* ResultsViewController.swift */; };
+		BF30DE98208EF4F4003F1B33 /* MyGenresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF30DE97208EF4F4003F1B33 /* MyGenresViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,9 @@
 		BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitViewController.swift; sourceTree = "<group>"; };
 		BF30DE8F208D805A003F1B33 /* project33.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = project33.entitlements; sourceTree = "<group>"; };
 		BF30DE91208D816D003F1B33 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		BF30DE93208D96F3003F1B33 /* Whistle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Whistle.swift; sourceTree = "<group>"; };
+		BF30DE95208ED9ED003F1B33 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		BF30DE97208EF4F4003F1B33 /* MyGenresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGenresViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +80,10 @@
 				BF30DE8D208D72A5003F1B33 /* SubmitViewController.swift */,
 				BF30DE89208ACCD4003F1B33 /* SelectGenreViewController.swift */,
 				BF30DE7720880E31003F1B33 /* ViewController.swift */,
+				BF30DE95208ED9ED003F1B33 /* ResultsViewController.swift */,
+				BF30DE97208EF4F4003F1B33 /* MyGenresViewController.swift */,
 				BF30DE7920880E31003F1B33 /* Main.storyboard */,
+				BF30DE93208D96F3003F1B33 /* Whistle.swift */,
 				BF30DE7C20880E33003F1B33 /* Assets.xcassets */,
 				BF30DE7E20880E33003F1B33 /* LaunchScreen.storyboard */,
 				BF30DE8120880E33003F1B33 /* Info.plist */,
@@ -173,8 +182,11 @@
 				BF30DE8C208D6FED003F1B33 /* AddCommentsViewController.swift in Sources */,
 				BF30DE7620880E31003F1B33 /* AppDelegate.swift in Sources */,
 				BF30DE8A208ACCD4003F1B33 /* SelectGenreViewController.swift in Sources */,
+				BF30DE98208EF4F4003F1B33 /* MyGenresViewController.swift in Sources */,
+				BF30DE94208D96F3003F1B33 /* Whistle.swift in Sources */,
 				BF30DE8E208D72A5003F1B33 /* SubmitViewController.swift in Sources */,
 				BF30DE8820882418003F1B33 /* RecordWhistleViewController.swift in Sources */,
+				BF30DE96208ED9ED003F1B33 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
